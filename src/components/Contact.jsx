@@ -2,7 +2,7 @@ import React,{Component} from "react";
 import { ElementBody } from "./Body";
 import { ContactList } from "./conatctlist";
 
-const Contact = ()=>{
+const Contact = (props)=>{
     return(
         <section id="contact">
             <ElementBody name ="Contact">
@@ -15,7 +15,7 @@ const Contact = ()=>{
                         <ContactList title="Phone" content="+234 666 4190 345"></ContactList>
                         <ContactList title="Email" content="cchukwudi099@gmail.com"></ContactList>
                     </article>
-                    <form action="">
+                    <form action="https://formsubmit.co/cchukwudi099@gmail.com" method="POST">
                         <h4>Contact Delearner</h4>
                         <div>
                             <p><input type="text"placeholder="Your Name" /></p>

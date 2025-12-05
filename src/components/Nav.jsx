@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBars,faXmark, faPhone, faAddressCard, faCode} from "@fortawesome/free-solid-svg-icons";
+import {faBars,faXmark, faPhone, faAddressCard, faCode, faChevronUp} from "@fortawesome/free-solid-svg-icons";
 
-const Nav = ()=>{
+const Nav = (props)=>{
 
     return(
         <>
@@ -15,6 +15,7 @@ const Nav = ()=>{
                 <li><a href="#about"><span>About</span> <FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon></a></li>
                 <li><a href="#stack"><span>Stack</span> <FontAwesomeIcon icon={faCode}></FontAwesomeIcon></a></li>
                 <li><a href="#contact"><span>Contact</span><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
+                {props.width && <li><a href="#"><FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon></a></li> }
             </ul>
         </nav>
         </>

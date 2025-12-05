@@ -1,20 +1,20 @@
 import React,{Component} from "react";
 import { ElementBody } from "./Body";
-import firstImg from "./../images/f835294d-48d8-4212-b8a9-18d699af17ba.jpeg"
-import SecondImg from "./../images/wallpaper7.jpg"
+import firstImg from "./../images/pic1.png"
+import SecondImg from "./../images/pic2.png"
 
 const About = (props) =>{
     return (
         <section id ="about">
-            <ElementBody name ="About">
+            <ElementBody name ="About" widthX = {props.widthX}>
                 <div className="aboutContainer">
                     <figure>
                         <img src={firstImg} alt="" />
                         <img id="middle" src={SecondImg} alt="" />
-                        <img src={firstImg} alt="" />
                         <div></div>
-                        <p>Learn</p>
+                        <p>Projects</p>
                     </figure>
+                    <a href="#contact">Preview</a>
                     <article>
                         <span>Name : {props.name}. Date of Birth : {props.DOB}. Age : {props.age}. Skills : {props.skill}</span>
                         <code>THis user can Learn ANYTHIING</code>

@@ -5,9 +5,9 @@ import {faFacebook, faTwitter, faInstagram} from "@fortawesome/free-brands-svg-i
 const Socials = () =>{
     return(
          <div className="socials">
-            <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://www.instagram.com/cchukwudi099/"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.facebook.com/profile.php?id=100084754180014"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://x.com/Chinons43591657"><FontAwesomeIcon icon={faTwitter} /></a>
          </div>
     )
 }

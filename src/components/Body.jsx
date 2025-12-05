@@ -1,10 +1,18 @@
-import React,{Component} from "react";
+import React,{Component,useEffect} from "react";
 import { Nav } from "./Nav";
 import mainlogo from "../images/mainlogo.png"
 import { Socials } from "./Socials";
 
 
 const ElementBody = (props) =>{
+    const [newWidth, updateNewWidth] = React.useState(()=>window.innerWidth > 700)
+
+      useEffect(()=>{
+        window.addEventListener("resize", ()=>{
+          updateNewWidth(()=> window.innerWidth > 700)
+        })
+      },[])
+
     return(
         <>
         <section className="mainBody">
@@ -12,7 +20,7 @@ const ElementBody = (props) =>{
                 <a href="/#"><img src={mainlogo} id="mainlogo"alt="logo" /></a>
                 <h2>{props.name}</h2>
             </figure>
-            <Nav/>
+            {newWidth && <Nav width = {!newWidth} />}
             <Socials/>
             <div className="designName">
                 <span></span>

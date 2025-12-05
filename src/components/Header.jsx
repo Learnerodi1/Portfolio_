@@ -2,10 +2,10 @@ import React,{Component} from "react";
 import { ElementBody } from "./Body";
 import mainlogo from "./../images/mainlogo.png"
 
-const Header =() =>{
+const Header =(props) =>{
     return(
         <header>
-            <ElementBody name = "Home">
+            <ElementBody name = "Home" >
                 <article>
                     <div className="headerContainer">
                         <figure>

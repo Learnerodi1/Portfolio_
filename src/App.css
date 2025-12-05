@@ -16,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 /* Utility */
 li{
@@ -79,7 +80,6 @@ nav{
     top: 30px;
     right: 40px;
     z-index: 11;
-    
 }
 nav #navCtrl{
     display: none;
@@ -168,7 +168,7 @@ header article{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 80px;
+    gap: 50px;
     margin-bottom: 50px;
 }
 .aboutContainer figure{
@@ -193,9 +193,19 @@ header article{
     z-index: -1;
 
 }
+
+.aboutContainer a{
+    padding: 10px  60px ;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: rgb(77, 77, 228);
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .aboutContainer figure img{
-    width: 25%;
-    aspect-ratio: 1/1;
+    width: 40%;
+    height: 300px;
+    /* aspect-ratio: 1/1; */
 }
 #middle{
     aspect-ratio: 1/1.2;
@@ -363,7 +373,7 @@ header article{
     align-items: center;
     gap: 20px;
 }
-.contactContainer form .btn{
+.contactContainer form .btn, .aboutContainer button{
     width: 40%;
     height: 40px;
     background-color: transparent;
@@ -475,7 +485,8 @@ footer .socials{
     }
     nav #navCtrl{
         display: block;
-        background-color:rgba(237, 233, 233, 0.21);
+        /* background-color:rgba(237, 233, 233, 0.21); */
+        background-color:rgba(19, 241, 115, 0.793);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
         position: relative;
         padding: 10px;
@@ -521,7 +532,7 @@ footer .socials{
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.356);
         top: 40px;
         width: 100%;
-        background-color:rgba(237, 233, 233, 0.21);
+        background-color:rgba(3, 43, 20, 0.793);
         transition: height .7s ease-in-out;
         
     }
@@ -533,8 +544,13 @@ footer .socials{
         height: fit-content;
     }
     nav{
+        background-color:rgba(3, 43, 20, 0.793);
+        position: fixed;
         display: flex;
         flex-direction: column;
+        height: fit-content;
+        top: 30vh;
+        right: 28px;
     }
     .aboutContainer article span{
         width: 80%;
@@ -544,8 +560,12 @@ footer .socials{
     .aboutContainer article code{
         font-size: .8rem;
     }
+    .aboutContainer figure p{
+        font-size: 6rem;
+    }
     .aboutContainer figure img{
         display: none;
+        max-height: 200px;
     }
     #middle{
        display: block; 
@@ -620,10 +640,6 @@ footer .socials{
         font-size: 5.5rem;
         top: 80%;
     }
-    nav{
-        right: 10px;
-        top: 25px;
-    }
     .mainBody #status{
         padding: 10px;
         font-size: .5rem;
@@ -632,9 +648,6 @@ footer .socials{
     .mainBody #mainlogo{
         width: 20px;
         border: 2px solid white;
-    }
-    .aboutContainer figure p{
-        font-size: 8rem;
     }
     #middle{
         display: block; 
@@ -680,7 +693,7 @@ footer .socials{
         font-size: 4rem;
     }
     .aboutContainer figure p{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .aboutContainer article span{
         font-size: .8rem;
@@ -697,5 +710,4 @@ footer .socials{
         left: 1%;
     }
 }
-@media screen and (max-width:400px) {
-}
+
