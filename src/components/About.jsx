@@ -14,7 +14,7 @@ const About = (props) =>{
                         <div></div>
                         <p>Projects</p>
                     </figure>
-                    <a href="#https://projectpreviw.netlify.app/">Preview</a>
+                    <a target ={"_blank"} href="https://projectpreviw.netlify.app/">Preview</a>
                     <article>
                         <span>Name : {props.name}. Date of Birth : {props.DOB}. Age : {props.age}. Skills : {props.skill}</span>
                         <code>THis user can Learn ANYTHIING</code>
