@@ -15,13 +15,13 @@ const Contact = (props)=>{
                         <ContactList title="Phone" content="+234 666 4190 345"></ContactList>
                         <ContactList title="Email" content="cchukwudi099@gmail.com"></ContactList>
                     </article>
-                    <form action="https://formsubmit.co/cchukwudi099@gmail.com" method="POST">
+                    <form action="https://formspree.io/f/movgnpkg" method="post">
                         <h4>Contact Delearner</h4>
                         <div>
-                            <p><input type="text"placeholder="Your Name" /></p>
-                            <p><input type="text"placeholder="Your Email" /></p>
-                            <p><input type="tel"placeholder="Your Phone Number" /></p>
-                            <p><input type="tel"placeholder="Message" /></p>
+                            <p><input type="text" name="username" placeholder="Your Name" /></p>
+                            <p><input type="text"name ="email" placeholder="Your Email" /></p>
+                            <p><input type="tel" name ="phone" placeholder="Your Phone Number" /></p>
+                            <p><input type="tel" name= "message" qplaceholder="Message" /></p>
                         </div>
                         <button className="btn">Send</button>
                     </form>
